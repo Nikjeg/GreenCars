@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCars Project</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Kranky&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+                    <!-- header palkki (logo + hamburger icon)-->
+
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <div class="navbar">
+                        <a href="#" class="header__logo">
+                            <img class="logo__img" src="./icons/Logo.png" alt="GreenCars logo">
+                            <span class="nameOfCompany">GreenCars</span>
+                        </a>
+                        <div class="header__hamburger">
+                            <img src="./icons/hamburger__button.png" alt="hamburger_icon">
+                            
+                            
+                        </div>
+                    </div>
+
+                        <!-- Hamburger menu valikko -->
+
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    Sähköautot
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="./Rahoitus.html" class="header__link">
+                                    Rahoitus
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    Yhteystiedot
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    Tietoa meistä
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+            <!-- Auton kuva, kuuluu jokaiseen sivuun -->
+
+        <div class="content">
+            <div class="container">
+                <div class="content__img">
+                    <img id="background__image" src="./Auton_kuvat/pääkuva_uusi1.jpg" alt="Pääkuva">
+                </div>
+
+                <!-- Sähköautot palkki + järjestyspainike -->
+
+                <div class="container__title">
+
+                    <div class="box__title">
+                        <span class="page__title">Sähköautot</span>
+                    </div>
+                    <div class="sort__container">
+                        <form class="form">
+                            <select id="sorting" name="sorting">
+                                <option class="sort__option" value="option1">Hinta, kallein ensin</option>
+                                <option class="sort__option" value="option1">Hinta, halvin ensin</option>
+                                <option class="sort__option" value="option1">Uusin ilmoitus ensin</option>
+
+
+                            </select>
+                            <img id="sort__icon" src="./icons/Sort.png" alt="sortButton">
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <!-- Valikoima autoja 15kpl -->
+
+                <div class="main__container">
+                    <div class="car__list">
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/1.jpg" alt="KIAEV6">
+                                <div class="price__container">
+                                    <span class="price">57 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>KIA EV6 77,4 kwh</strong> <br>
+                                    VM 2019 <br>
+                                    99 335 km</span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/2.jpg" alt="Audi E-Tron Sportback">
+                                <div class="price__container">
+                                    <span class="price">45 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>Audi E-Tron Sportback 85kw</strong> <br>
+                                    VM 2019 <br>
+                                    99 335 km</span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/3.jpg" alt="Tesla model S">
+                                <div class="price__container">
+                                    <span class="price">87 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>Tesla model S 100kw</strong> <br>
+                                    VM 2020 <br>
+                                    63 565 km</span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/4.jpg" alt="Tesla model S">
+                                <div class="price__container">
+                                    <span class="price">72 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>Tesla model S 85kw</strong> <br>
+                                    VM 2018 <br>
+                                    119 335 km</span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/5.jpg" alt="BMW i3">
+                                <div class="price__container">
+                                    <span class="price">31 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>BMW i3 35kw</strong> <br>
+                                    VM 2019 <br>
+                                    99 335 km </span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/6.jpg" alt="Ford Mustang Mach-E">
+                                <div class="price__container">
+                                    <span class="price">57 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>Ford Mustang Mach-E 77,4 kwh</strong> <br>
+                                    VM 2019 <br>
+                                    99 335 km</span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/7.jpg" alt="Hyundai Kona Electric">
+                                <div class="price__container">
+                                    <span class="price">44 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>Hyundai Kona Electric 66kw</strong> <br>
+                                    VM 2020 <br>
+                                    99 335 km</span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/8.jpg" alt="Nissan leaf">
+                                <div class="price__container">
+                                    <span class="price">9 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>Nissan leaf 28 kwh</strong> <br>
+                                    VM 2014 <br>
+                                    99 335 km</span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/9.jpeg" alt="Tesla model X">
+                                <div class="price__container">
+                                    <span class="price">47 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>Tesla model X 100kw</strong> <br>
+                                    VM 2019 <br>
+                                    99 335 km</span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/10.jpg" alt="Kia Soul EV">
+                                <div class="price__container">
+                                    <span class="price">49 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>Kia Soul EV 55kw</strong> <br>
+                                    VM 2019 <br>
+                                    99 335 km</span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/11.jpg" alt="Audi Q8 Sportback">
+                                <div class="price__container">
+                                    <span class="price">117 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>Audi Q8 Sportback</strong><br>
+                                    VM 2023 <br>
+                                    32 300 km</span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/12.jpeg" alt="Tesla model 3">
+                                <div class="price__container">
+                                    <span class="price">57 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>Tesla model 3 60kw </strong><br>
+                                    VM 2022 <br>
+                                    47 335 km</span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/13.jpg" alt="Volvo XC40 Recharge">
+                                <div class="price__container">
+                                    <span class="price">68 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong> XC40 Recharge 100kw</strong><br>
+                                    VM 2019 <br>
+                                    99 335 km</span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/14.jpg" alt="Volkswagen ID.4">
+                                <div class="price__container">
+                                    <span class="price">57 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>Volkswagen ID.4 65kw</strong> <br>
+                                    VM 2021 <br>
+                                    66 675 km </span>
+                            </div>
+                        </div>
+                        <div class="car__container">
+                            <div class="img__container">
+                                <img class="img__container car" src="./Auton_kuvat/15.jpg" alt="Tesla model Y ">
+                                <div class="price__container">
+                                    <span class="price">59 990 €</span>
+                                </div>
+                            </div>
+                            <div class="info__container">
+                                <span class="car__info"><strong>Tesla model Y 100kw</strong> <br>
+                                    VM 2019 <br>
+                                    99 335 km</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__contant">
+                <div class="footer__container">
+                    <div class="box__about__us">
+                        <a href="#"><span class="about__us">Tietoa meistä</span></a>
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/"><img class="icon" src="./icons/Insta.png" alt="icon instagram"></a>
+                        <a href="https://twitter.com/"><img class="icon__x" src="./icons/X.png" alt="icon X"></a>
+                        <a href="https://www.facebook.com/"><img class="icon" src="./icons/Facebook.png" alt="icon Facebook"></a>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </main>
+    <script src="Script.js"></script>
+</body>
+
+</html>

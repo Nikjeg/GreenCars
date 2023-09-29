@@ -1,0 +1,548 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+/* Sivun Elementit ----------------------------------------------------------------*/
+
+html {
+    min-width: 430px;
+}
+
+body {
+    height: auto;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: roboto;
+    font-size: 30px;
+
+}
+
+li {
+    list-style: none;
+    display: flex;
+    padding-left: 135px;
+    align-items: center;
+}
+
+/* Header palkki ------------------------------------------------------------------*/
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    top: 0;
+    z-index: 50;
+}
+
+.header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D6DCC7;
+    border: #000 solid 1px;
+}
+
+.header__body {
+    position: relative;
+    z-index: 2;
+}
+
+/* Logo------------------------------------------------------------------------ */
+
+.nameOfCompany {
+    font-family: Goldman;
+    font-size: 40px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.logo__img {
+    width: 97px;
+    height: 89px;
+}
+
+/*Burger icon------------------------------------------------------------------*/
+.header__hamburger {
+    padding: 5px;
+}
+
+
+.header__hamburger img {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 75px;
+    height: 74px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+}
+
+/* Hamburger menu valikko -------------------------------------------------------*/
+
+
+
+.header__menu {
+    background-color: #5B7522;
+    opacity: 85%;
+    position: absolute;
+    right: 0;
+    transition: max-width 0.6s;
+    ;
+
+    max-width: 0;
+}
+
+.open {
+    max-width: 590px;
+}
+
+
+
+.header__item {
+    width: 590px;
+    height: 102px;
+    border: 1px solid black;
+
+}
+
+.header__link {
+    font-family: goldman;
+    font-size: 20px;
+    color: white;
+}
+
+/* Auton kuva, kuuluu jokaiseen sivuun ---------------------------------------- */
+
+.content__img {
+    display: flex;
+    margin-top: 85px;
+    width: 100%;
+    height: 534px;
+    background-color: #a5b18d;
+}
+
+#background__image {
+    height: 100%;
+    max-width: 1440px;
+    margin: auto;
+
+}
+
+/* Sähköautot palkki + järjestys painike--------------------------------------------*/
+
+.container__title {
+    display: flex;
+    width: 100%;
+    height: 67px;
+    background-color: #D6DCC7;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-bottom: black solid 1px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.box__title {
+    text-decoration: none;
+    font-family: Goldman;
+    font-size: 30px;
+    margin-top: 15px;
+
+}
+
+
+
+/* Järjestys painike----------------------------------------------------------------*/
+
+.sort__container {
+    height: 100%;
+    padding-left: 20px;
+}
+
+.form {
+    border: #000 solid 1px;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+#sorting {
+    all: unset;
+    font-family: goldman;
+    font-size: 20px;
+    height: 67px;
+    padding-left: 20px;
+    
+}
+
+
+
+.sort__option {
+    all: unset;
+    font-size: 24px;
+    font-family: goldman;
+    background-color: #D6DCC7;
+    margin: auto;
+}
+
+#sort__icon {
+    height: 38px;
+    width: 37px;
+    position: relative;
+    margin: auto;
+    bottom: 10px;
+
+}
+/*tietoa rahoituksesta---------------------------------------------*/
+.financing__container {
+    
+   display: flex;
+    width: 1440px;
+    margin-top: 86px;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    
+    
+}
+
+
+
+/* Kaupan valikoima, .-----------------------------------------------*/
+
+.main__container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #a5b18d;
+    justify-content: center;
+}
+
+.car__list {
+    display: flex;
+    width: 1440px;
+    margin-top: 86px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.car {
+    border: #000 solid 1px;
+}
+
+/* Myynti-ilmoituksen ruutu ------------------------------------------------------*/
+
+.car__container {
+    display: flex;
+    margin: 19px;
+    height: 361px;
+    width: 421px;
+    background-color: white;
+    border: #000 solid 1px;
+    position: relative;
+    justify-content: center;
+
+}
+
+/* Myynti-ilmoituksen auton kuva ----------------------------------------------*/
+
+.img__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 397px;
+    height: 216px;
+    position: absolute;
+    top: 5px;
+}
+
+/* Hinta ruutu ----------------------------------------------------------------*/
+.price__container {
+    display: flex;
+    width: 110px;
+    height: 40px;
+    border: #000 solid 1px;
+    position: absolute;
+    background-color: white;
+    bottom: -20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    font-family: goldman;
+    font-size: 20px;
+    color: #E71212;
+    position: absolute;
+}
+
+
+/* info autosta, myynti-ilmoituksen ruudussa ------------------------------------*/
+
+.info__container {
+    width: 398px;
+    height: 80px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.car__info {
+    font-family: roboto;
+    font-size: 18px;
+}
+
+/* footer ----------------------------------------------------------------------*/
+.footer {
+    height: 230px;
+    background-color: #D6DCC7;
+    display: flex;
+    border: #000 solid 1px;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.footer__contant {
+    display: flex;
+    width: 100%;
+
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+/*Painike "tietoa meistä" ---------------------------------------------------*/
+
+
+.box__about__us {
+    margin-bottom: 37px;
+}
+
+.about__us {
+    display: flex;
+    font-family: goldman;
+    font-size: 24px;
+    ;
+}
+
+/* Icons social media */
+.icons {
+    display: flex;
+    right: 50%;
+    left: 50%;
+}
+
+.icon__x {
+    width: 72px;
+    height: 72px;
+    margin-right: 49px;
+    margin-left: 49px;
+}
+
+.icon {
+
+    width: 72px;
+    height: 72px;
+
+}
+
+/* @mediat-------------------------------------------------------*/
+
+@media screen and (max-width: 430px) {
+
+    /* header palkki  ----------------------*/
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 85px;
+        width: 430px;
+    }
+
+    /*Sähköautot  ---------------------------*/
+    .box__title {
+        text-decoration: none;
+        font-family: Goldman;
+        font-size: 24px;
+        position: absolute;
+        left: 0px;
+
+    }
+
+    .nameOfCompany {
+        font-family: Goldman;
+        font-size: 30px;
+    }
+
+    /* Myynti-ilmoitus*/
+
+    .info__container {
+        width: 398px;
+        height: 80px;
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .car__container {
+        display: flex;
+        margin: auto;
+        height: 330px;
+        width: 430px;
+        background-color: white;
+        border: #000 solid 1px;
+        position: relative;
+        justify-content: center;
+
+    }
+
+    /*Hamburger menu ------------------------------*/
+
+    .header__item {
+        max-width: 430px;
+        height: 100px;
+        border: 1px solid black;
+
+    }
+
+    /* Tausta kuva----------------------------------*/
+
+    .content__img {
+        display: flex;
+        margin-top: 85px;
+        width: 100%;
+        max-height: 250px;
+        background-color: #a5b18d;
+    }
+
+    #background__image {
+        width: 100vw;
+        margin: auto;
+
+    }
+
+    /*Järjestys painike */
+
+    #sorting {
+        all: unset;
+        font-family: goldman;
+        font-size: 14px;
+        height: 67px;
+        padding: auto;
+    }
+}
+
+/* mediat------------------------------------*/
+
+@media screen and (max-width: 900px) {
+
+    /*Header palkki---------------------------*/
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 85px;
+        min-width: 430px;
+    }
+
+    /* Sähköposti sivun otsikko-----------------------*/
+    .box__title {
+        text-decoration: none;
+        font-family: Goldman;
+        font-size: 24px;
+        position: absolute;
+        left: 0px;
+
+    }
+
+    .nameOfCompany {
+        font-family: Goldman;
+        font-size: 30px;
+    }
+
+    /* Myynti-ilmoitus ------------------------------- */
+
+    .info__container {
+        width: 398px;
+        height: 80px;
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .car__container {
+        display: flex;
+        margin: auto;
+        height: 330px;
+        width: 430px;
+        background-color: white;
+        border: #000 solid 1px;
+        position: relative;
+        justify-content: center;
+
+    }
+
+
+
+    /*Hamburger menu */
+
+    .header__item {
+        max-width: 430px;
+        height: 100px;
+        border: 1px solid black;
+
+    }
+    /* Tausta kuva------------------------------------ */
+    .content__img {
+        display: flex;
+        margin-top: 85px;
+        width: 100%;
+        max-height: 220px;
+        background-color: #a5b18d;
+    }
+
+    #background__image {
+        max-height: 250px;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    /* Järjestys painike-------------------------------*/
+    #sorting {
+        all: unset;
+        font-family: goldman;
+        font-size: 14px;
+        height: 67px;
+        padding-left: 20px;
+    }
+}
